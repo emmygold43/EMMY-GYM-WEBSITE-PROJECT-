@@ -1,0 +1,110 @@
+<svg viewBox="0 0 600 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="380" fill="#000000" />
+  <defs>
+    <linearGradient id="chromeBright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#F3F4F6" />
+      <stop offset="50%" stop-color="#D1D5DB" />
+      <stop offset="75%" stop-color="#9CA3AF" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="chromeShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF" />
+      <stop offset="35%" stop-color="#6B7280" />
+      <stop offset="70%" stop-color="#374151" />
+      <stop offset="100%" stop-color="#1F2937" />
+    </linearGradient>
+    <linearGradient id="bevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#E5E7EB" />
+      <stop offset="55%" stop-color="#9CA3AF" />
+      <stop offset="100%" stop-color="#6B7280" />
+    </linearGradient>
+    <linearGradient id="crimsonRed" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="40%" stop-color="#D3121A" />
+      <stop offset="85%" stop-color="#B70E15" />
+      <stop offset="100%" stop-color="#880808" />
+    </linearGradient>
+    <linearGradient id="gloveHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B72" />
+      <stop offset="100%" stop-color="#D3121A" />
+    </linearGradient>
+    <filter id="redGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#D3121A" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- THE CHISELED METALLIC E -->
+  <g id="letter-E-emblem">
+    <polygon points="255,75 405,75 390,95 285,95 265,145 255,145" fill="url(#chromeBright)" />
+    <polygon points="285,95 390,95 375,115 280,115" fill="url(#chromeShadow)" />
+    <polygon points="255,75 285,75 240,195 220,195" fill="url(#chromeBright)" />
+    <polygon points="285,75 305,75 260,195 240,195" fill="url(#chromeShadow)" />
+    <polygon points="280,130 350,130 335,148 270,148" fill="url(#chromeBright)" />
+    <polygon points="240,195 385,195 370,175 250,175" fill="url(#chromeBright)" />
+    <polygon points="220,195 385,195 365,215 210,215" fill="url(#chromeShadow)" />
+  </g>
+
+  <!-- RED SPEED SLASH & BOXING GLOVE -->
+  <g id="red-slash-and-glove" filter="url(#redGlow)">
+    <path d="M 195,215 C 220,195 250,175 310,145 L 320,152 C 265,180 230,205 195,215 Z" fill="url(#crimsonRed)" />
+    <path d="M 195,215 C 235,185 285,155 330,135 L 340,144 C 285,170 235,200 195,215 Z" fill="url(#crimsonRed)" />
+    <path d="M 315,142 L 328,136 L 333,148 L 320,154 Z" fill="#990000" />
+    <line x1="318" y1="140" x2="322" y2="152" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8" />
+    <line x1="322" y1="138" x2="326" y2="150" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8" />
+    <path d="M 326,137 C 333,122 350,118 360,126 C 368,133 368,145 362,154 C 354,165 340,165 330,154 Z" fill="url(#crimsonRed)" />
+    <path d="M 345,122 C 355,122 363,128 363,138 C 363,144 358,150 352,150 C 355,140 350,130 345,122 Z" fill="url(#gloveHighlight)" />
+    <path d="M 333,144 C 330,152 334,160 342,160 C 345,160 348,156 345,152 C 340,150 336,146 333,144 Z" fill="#880808" />
+    <path d="M 335,134 C 342,126 352,127 357,133" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.65" />
+  </g>
+
+  <!-- METALLIC CHISELED EMMY WORDMARK -->
+  <g id="emmy-wordmark">
+    <!-- E -->
+    <polygon points="108,245 130,245 130,295 108,295" fill="url(#chromeBright)" />
+    <polygon points="130,245 142,245 142,295 130,295" fill="url(#chromeShadow)" />
+    <polygon points="100,245 180,245 180,256 168,256 142,256 130,256 100,256" fill="url(#bevelLight)" />
+    <polygon points="130,266 166,266 166,275 130,275" fill="url(#chromeBright)" />
+    <polygon points="100,284 180,284 180,295 100,295" fill="url(#chromeShadow)" />
+    <polygon points="175,245 180,245 180,258 175,255" fill="url(#chromeBright)" />
+    <polygon points="175,282 180,282 180,295 175,295" fill="url(#chromeShadow)" />
+    <!-- M 1 -->
+    <polygon points="196,245 214,245 204,295 188,295" fill="url(#chromeBright)" />
+    <polygon points="214,245 242,284 233,287 205,245" fill="url(#chromeShadow)" />
+    <polygon points="242,284 270,245 278,245 249,287" fill="url(#chromeBright)" />
+    <polygon points="270,245 288,245 288,295 272,295" fill="url(#chromeShadow)" />
+    <polygon points="186,245 208,245 208,250 186,250" fill="url(#chromeBright)" />
+    <polygon points="276,245 298,245 298,250 276,250" fill="url(#chromeBright)" />
+    <polygon points="182,290 210,290 210,295 182,295" fill="url(#chromeShadow)" />
+    <polygon points="266,290 294,290 294,295 266,295" fill="url(#chromeShadow)" />
+    <!-- M 2 -->
+    <polygon points="314,245 332,245 322,295 306,295" fill="url(#chromeBright)" />
+    <polygon points="332,245 360,284 351,287 323,245" fill="url(#chromeShadow)" />
+    <polygon points="360,284 388,245 396,245 367,287" fill="url(#chromeBright)" />
+    <polygon points="388,245 406,245 406,295 390,295" fill="url(#chromeShadow)" />
+    <polygon points="304,245 326,245 326,250 304,250" fill="url(#chromeBright)" />
+    <polygon points="394,245 416,245 416,250 394,250" fill="url(#chromeBright)" />
+    <polygon points="300,290 328,290 328,295 300,295" fill="url(#chromeShadow)" />
+    <polygon points="384,290 412,290 412,295 384,295" fill="url(#chromeShadow)" />
+    <!-- Y -->
+    <polygon points="422,245 442,245 464,272 452,274" fill="url(#chromeBright)" />
+    <polygon points="498,245 478,245 458,272 470,274" fill="url(#chromeShadow)" />
+    <polygon points="454,272 466,272 466,295 454,295" fill="url(#chromeBright)" />
+    <polygon points="466,272 474,272 474,295 466,295" fill="url(#chromeShadow)" />
+    <polygon points="414,245 432,245 432,250 414,250" fill="url(#chromeBright)" />
+    <polygon points="488,245 506,245 506,250 488,250" fill="url(#chromeBright)" />
+    <polygon points="446,290 482,290 482,295 446,295" fill="url(#chromeShadow)" />
+  </g>
+
+  <!-- BOXING CLUB WITH TAPERED RED SPEARS -->
+  <g id="boxing-club-bar">
+    <polygon points="102,323 186,321 186,325 102,323" fill="url(#crimsonRed)" />
+    <polygon points="102,323 148,321 148,323" fill="#FF4D58" />
+    <text x="300" y="327" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16.5" font-weight="800" letter-spacing="0.44em" text-anchor="middle">
+      BOXING CLUB
+    </text>
+    <polygon points="498,323 414,321 414,325 498,323" fill="url(#crimsonRed)" />
+    <polygon points="498,323 452,321 452,323" fill="#FF4D58" />
+  </g>
+</svg>

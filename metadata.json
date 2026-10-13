@@ -1,0 +1,6 @@
+{
+  "name": "EMMY Boxing Club",
+  "description": "High-converting, modern athletic landing page for EMMY Boxing Club with split asymmetric hero, interactive class booking, schedule, and programs.",
+  "requestFramePermissions": ["MICROPHONE"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --crimson: #D3121A;
+    --jet-black: #111111;
+    --graphite: #1F2937;
+    --cool-gray: #6B7280;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Diagonal athletic racing stripes */
+.athletic-stripes-pattern {
+  background: repeating-linear-gradient(
+    -45deg,
+    #D3121A,
+    #D3121A 14px,
+    transparent 14px,
+    transparent 28px,
+    #1F2937 28px,
+    #1F2937 42px,
+    transparent 42px,
+    transparent 56px
+  );
+}
+
+/* Subtle dark texture pattern for accents */
+.bg-subtle-mesh {
+  background-image: radial-gradient(rgba(211, 18, 26, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}

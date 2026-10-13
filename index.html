@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Browser extension / sandbox compatibility polyfill for window.fetch
+      (function() {
+        try {
+          var _origFetch = typeof window !== 'undefined' && window.fetch ? window.fetch.bind(window) : undefined;
+          var _currentFetch = _origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(newFetch) {
+              _currentFetch = newFetch;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // ignore
+        }
+
+        // Suppress unhandled errors from external browser extensions
+        if (typeof window !== 'undefined') {
+          window.addEventListener('error', function(event) {
+            if (
+              (event.filename && event.filename.indexOf('chrome-extension://') !== -1) ||
+              (event.message && event.message.indexOf('Cannot set property fetch') !== -1)
+            ) {
+              event.preventDefault();
+              event.stopPropagation();
+              return true;
+            }
+          }, true);
+        }
+      })();
+    </script>
+    <title>EMMY BOXING CLUB | More Than Just A Gym</title>
+    <meta name="description" content="At EMMY Boxing Club, we build stronger bodies, sharper minds, and greater confidence. Modern athletic training, expert trainers, and championship-grade facilities." />
+    <meta property="og:title" content="EMMY BOXING CLUB | More Than Just A Gym" />
+    <meta property="og:description" content="At EMMY Boxing Club, we build stronger bodies, sharper minds, and greater confidence. Modern athletic training, expert trainers, and championship-grade facilities." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/emmy_logo.svg" />
+    <link rel="alternate icon" type="image/png" href="/Emmy Boxing Club Metallic Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-[#111111] antialiased selection:bg-[#D3121A] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
